@@ -8,8 +8,8 @@ Projekt zaliczeniowy JS2026, Wydział Informatyki Politechniki Białostockiej.
 
 | Osoba | Rola | Zakres |
 | --- | --- | --- |
-| Karol Paszkowski | lider | serwery, kanały, wiadomości, role, kanały głosowe |
-| Dominika | członek | logowanie, profil, załączniki, wiadomości prywatne, wyszukiwanie |
+| Karol Paszkowski | członek | serwery, kanały, wiadomości, role, kanały głosowe |
+| Dominika Redźko  | liderka | logowanie, profil, załączniki, wiadomości prywatne, wyszukiwanie |
 
 ## Funkcje (MVP)
 
