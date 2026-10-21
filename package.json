@@ -1,0 +1,26 @@
+{
+  "name": "doka",
+  "version": "1.0.0",
+  "description": "Aplikacja do komunikacji grupowej w stylu Discorda, z interfejsem inspirowanym TeamSpeakiem. Serwery z kanałami tekstowymi i głosowymi, wiadomości, obrazki i rozmowy prywatne.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sounter93/DoKa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sounter93/DoKa/issues"
+  },
+  "homepage": "https://github.com/Sounter93/DoKa#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  }
+}

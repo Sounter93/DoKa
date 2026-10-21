@@ -2,12 +2,8 @@
 
 Aplikacja do komunikacji grupowej w stylu Discorda, z interfejsem inspirowanym TeamSpeakiem. Serwery z kanałami tekstowymi i głosowymi, wiadomości, obrazki i rozmowy prywatne.
 
-Projekt zaliczeniowy JS2026, Wydział Informatyki Politechniki Białostockiej.
-
 ## Zespół
 
-| Osoba | Rola | Zakres |
-| --- | --- | --- |
 | Karol Paszkowski | członek | serwery, kanały, wiadomości, role, kanały głosowe |
 | Dominika Redźko  | liderka | logowanie, profil, załączniki, wiadomości prywatne, wyszukiwanie |
 
@@ -32,8 +28,6 @@ Projekt zaliczeniowy JS2026, Wydział Informatyki Politechniki Białostockiej.
 - Frontend: Vue 3, Vue Router, Pinia *(od etapu 8)*
 
 ## Uruchomienie
-
-Wymagany Node.js 22 lub nowszy.
 
 ```bash
 cd server
