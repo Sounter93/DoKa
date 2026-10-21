@@ -1,0 +1,87 @@
+### DoKa API - testy ręczne (VS Code: rozszerzenie "REST Client")
+### Kliknij "Send Request" nad każdym zapytaniem.
+
+@base = http://localhost:3000/api
+
+### Czy serwer żyje?
+GET {{base}}/health
+
+### Lista użytkowników (skopiuj id do zmiennych poniżej)
+GET {{base}}/users
+
+### Wklej tu id z odpowiedzi powyżej
+@userId = WKLEJ_ID_UZYTKOWNIKA
+@serverId = WKLEJ_ID_SERWERA
+@channelId = WKLEJ_ID_KANALU
+@messageId = WKLEJ_ID_WIADOMOSCI
+
+### Nowy użytkownik
+POST {{base}}/users
+Content-Type: application/json
+
+{ "username": "tomek", "displayName": "Tomek" }
+
+### Lista serwerów
+GET {{base}}/servers
+
+### Serwer z kanałami
+GET {{base}}/servers/{{serverId}}
+
+### Nowy serwer
+POST {{base}}/servers
+Content-Type: application/json
+
+{ "name": "Grupa PS1", "ownerId": "{{userId}}" }
+
+### Zmiana nazwy serwera
+PATCH {{base}}/servers/{{serverId}}
+Content-Type: application/json
+
+{ "name": "Nowa nazwa" }
+
+### Kanały serwera (filtr ?type=text lub voice)
+GET {{base}}/servers/{{serverId}}/channels?type=text
+
+### Nowy kanał
+POST {{base}}/servers/{{serverId}}/channels
+Content-Type: application/json
+
+{ "name": "zdjecia", "type": "text" }
+
+### Wiadomości w kanale (limit i wyszukiwanie)
+GET {{base}}/channels/{{channelId}}/messages?limit=20&q=witajcie
+
+### Wyślij wiadomość
+POST {{base}}/channels/{{channelId}}/messages
+Content-Type: application/json
+
+{ "authorId": "{{userId}}", "content": "Cześć wszystkim!" }
+
+### Edytuj wiadomość
+PATCH {{base}}/messages/{{messageId}}
+Content-Type: application/json
+
+{ "content": "Poprawiona treść" }
+
+### Usuń wiadomość
+DELETE {{base}}/messages/{{messageId}}
+
+### --- Przypadki błędów ---
+
+### 400 - walidacja
+POST {{base}}/servers
+Content-Type: application/json
+
+{ "name": "x" }
+
+### 400 - zły JSON
+POST {{base}}/servers
+Content-Type: application/json
+
+{ zly json
+
+### 404 - nie ma takiego serwera
+GET {{base}}/servers/nie-istnieje
+
+### 404 - nie ma takiej trasy
+GET {{base}}/cos-tam

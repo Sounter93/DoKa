@@ -1,0 +1,16 @@
+{
+  "name": "doka-server",
+  "version": "0.1.0",
+  "description": "Backend aplikacji DoKa",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  }
+}
