@@ -4,8 +4,10 @@ Aplikacja do komunikacji grupowej w stylu Discorda, z interfejsem inspirowanym T
 
 ## Zespół
 
-| Karol Paszkowski | członek | serwery, kanały, wiadomości, role, kanały głosowe |
-| Dominika Redźko  | liderka | logowanie, profil, załączniki, wiadomości prywatne, wyszukiwanie |
+- Karol Paszkowski
+- Dominika Redźko
+
+Kod przygotowujemy wspólnie, bez podziału na role i obszary.
 
 ## Funkcje (MVP)
 
